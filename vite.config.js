@@ -12,7 +12,9 @@ export default defineConfig({
         emptyOutDir: true,
         rollupOptions: {
             input: {
-                signin: path.resolve(__dirname, "src/index.html"),
+                home: path.resolve(__dirname, "src/index.html"),
+                signin: path.resolve(__dirname, "src/sign-in.html"),
+                signup: path.resolve(__dirname, "src/sign-up.html"),
             },
         },
     },
