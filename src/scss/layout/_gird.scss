@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "sass:map";
 
 * {
   box-sizing: border-box;
@@ -130,7 +131,7 @@ $gutters: (
 }
 
 @each $brackpoint, $demensiton in $grid-breakpoints {
-  $max-width: map-get($container-max-widths, $brackpoint);
+  $max-width: map.get($container-max-widths, $brackpoint);
   $infix: if($brackpoint == xs, "", "-#{$brackpoint}");
   @include make-media-query($demensiton, $brackpoint == xs) {
     .container {
@@ -141,7 +142,6 @@ $gutters: (
     @include make-columns($infix);
     @include make-offsets($infix);
     @include make-guitter($infix);
-
 
   }
 }

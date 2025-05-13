@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <%- include("./partials/head.ejs") %>
+        <!-- link css -->
+        <link rel="stylesheet" href="./scss/pages/_home.scss" />
     </head>
     <body>
-        <%- include("./partials/header.ejs") %> <%-
-        include("./partials/footer.ejs") %>
+        <div class="wrap-header"><%- include("./partials/header.ejs") %></div>
+        <section>
+            <div class="container">
+                    <div class="business-man">
+                        <img class="man-picture" src="../public/img/anh-profile-tiet-lo-g-ve-ban-1.webp" alt="đây là ảnh">
+                    </div>                    
+                </div>
+            </div>
+        </section>
     </body>
     <script type="module" src="./main.js"></script>
 </html>

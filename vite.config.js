@@ -4,6 +4,7 @@ import path from "path";
 import { register } from "module";
 
 export default defineConfig({
+    base: process.env.NODE_ENV === "production" ? "/f8-zoom-module-1" : "/",
     root: "src",
     publicDir: "../public",
     build: {
@@ -11,7 +12,7 @@ export default defineConfig({
         emptyOutDir: true,
         rollupOptions: {
             input: {
-                main: path.resolve(__dirname, "src/index.html"),
+                signin: path.resolve(__dirname, "src/index.html"),
             },
         },
     },

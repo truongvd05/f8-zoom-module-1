@@ -1,7 +1,7 @@
 @use "./reset.scss";
-
+@use "./variables.scss";
+    
 // layout
-
 @use "./layout/gird";
 @use "./layout/header";
 @use "./layout/footer";
@@ -9,6 +9,8 @@
 // pages
 @use "./pages/home";
 @use "./pages/about";
+@use "./pages/sign-in";
+@use "./pages/sign-up";
 
 // components
 @use "./components/button";
