@@ -43,7 +43,7 @@ $container-max-widths: (
   @extend .container-fluid
 }
 
-$grid-columns: 12 !default;
+$grid-columns: 10 !default;
 $grid-guitter: 30px !default;
 $gutters: (
   0: 0,

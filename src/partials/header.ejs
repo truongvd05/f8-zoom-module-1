@@ -4,7 +4,6 @@
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet"
 />
-<link rel="stylesheet" href="../scss/layout/_header.scss" />
 <!-- reset css -->
 <link rel="stylesheet" href="../scss/reset.scss" />
 
@@ -16,6 +15,9 @@
                     <nav class="header-about">
                         <a href="">Về chúng tôi</a>
                     </nav>
+                    <div class="mobile-about">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
                 </div>
                 <div class="col">
                     <ul class="header-support">
@@ -38,6 +40,10 @@
                             >
                         </li>
                     </ul>
+                    <div class="mobile-hotline">
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="header-hotline">Hotline: 19200 10800</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,6 +57,9 @@
                             <span class="header-circle__half"></span>
                         </span>
                         <h1 class="header-logo__text">Nạp Tiền</h1>
+                    </div>
+                    <div class="header-mobile-icon">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
                 <div class="col">
@@ -69,13 +78,19 @@
                             <i class="header-search__icon fas fa-search"></i>
                         </div>
                     </div>
+                    <div class="header-search-mobile">
+                        <i class="fas fa-search"></i>
+                        <i class="far fa-user"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <nav class="wrap-header__nav">
         <div class="container">
-            <div class="row">
+            <div
+                class="row row-cols-xxl-2 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-2 row-cols-1"
+            >
                 <div class="col">
                     <ul class="header-nav">
                         <li>
