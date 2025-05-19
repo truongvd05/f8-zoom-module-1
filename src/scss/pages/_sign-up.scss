@@ -1,6 +1,7 @@
 @use "../variables.scss";
 @use "../components/button";
 @use "../components/form";
+@use "./mixins";
 
 
 
@@ -126,5 +127,12 @@
         gap: 20px;
         font-size: 2rem;
         color: variables.$text-color;
+    }
+}
+
+@include mixins.screen(sm){
+    .sign-left {
+        padding: 20px 0;
+        margin: 0px;
     }
 }
