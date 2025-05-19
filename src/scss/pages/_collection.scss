@@ -68,6 +68,7 @@
 .collection-list__left {
     @include mixins.flexbox(0px);
     width: 100%;
+    margin-left: 5%;
     .collection-list-title {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         font-size: 2rem;
@@ -255,13 +256,21 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .collection-btn__next {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 
     .collection-item__img {
         height: 100%;
     }
+    .wrap-collection-item {
+        .wrap-item__img {
+            img {
+                height: 150px;
+            }
+        }
+    }
+
 }
 @include mixins.screen(xm){
     .collection-grid {
