@@ -1,0 +1,131 @@
+@use "../pages/mixins";
+@use "../variables.scss";
+@use "../components/button";
+@use "../components/form";
+
+
+.account {
+    position: relative;
+    top: -120px;
+}
+.account-background {
+    width: 100%;
+    height: 228px;
+    background-color: variables.$secondary-background-color;
+    margin-top: -19px;
+}
+
+.account-left {
+    width: 100%;
+    height: 628px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    .account-img {
+        @include mixins.flexbox(10px);
+        align-items: center;
+        img {
+            margin: 20px 0;
+            width: 172px;
+            height: 172px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: -60px center;
+        }
+        .account-name {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        .account-info {
+            background-color: variables.$secondary-background-color;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+    }
+
+    .account-left-bottom {
+        @include mixins.flexbox(10px);
+        align-items: center;
+        margin-top: 80px;
+        .bottom-account {
+            border-radius: 20px;
+            font-size: 1.4rem;
+            &:hover {
+                background-color: variables.$secondary-background-color;
+                color: variables.$premeri-color;
+            }
+            a {
+                display: inline-block;
+                width: 200px;
+                padding: 10px;
+            }
+            .account-icon {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+// account-right 
+.account-right {
+    width: 100%;
+    height: 628px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.account-overview {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.account-balance {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 0 10px;
+    min-height: 167px;;
+    .balance-text {
+        font-size: 1.6rem;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .wrap-accout-bank {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 20px 0;
+        font-size: 1.6rem;
+        .account-bank {
+            display: flex;
+            color: variables.$premeri-color;
+        }
+        .account-recharge {
+            background-color: variables.$background-color;
+            padding: 5px 10px;
+            border-radius: 20px;
+            &:hover {
+                background-color: variables.$secondary-background-color;
+            }
+        }
+    }
+}
+
+.history-status {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+        .status-text {
+            font-size: 1rem;
+        }
+        .status-number {
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: variables.$premeri-color;
+    }
+}

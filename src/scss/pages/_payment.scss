@@ -1,0 +1,99 @@
+@use "../pages/mixins";
+@use "../variables.scss";
+@use "../components/button";
+@use "../components/form";
+
+.wrap-online-payment {
+    background-color: variables.$secondary-color;
+}
+.wrap-payment {
+    @include mixins.flexbox(20px);
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #fff4f1;
+    width: 100%;
+}
+.online-payment  {
+    @include mixins.flexbox(20px);
+    .payment-title {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .payment-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &::before {
+            top: 12px;
+            left: 20px;
+            position: absolute;
+            content: "Tên";
+            color: rgba(0, 0, 0, 0.4);
+        }
+        &::after {
+            top: 52px;
+            left: 20px;
+            position: absolute;
+            content: "E-mail";
+            color: rgba(0, 0, 0, 0.4);
+        }
+        .input-information {
+            width: 400px;
+            outline: none;
+            border: 1px solid #1111 ;
+            border-radius: 10px;
+            padding: 10px 0px 10px 80px;
+            }
+    }
+}
+
+.online-bottom {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin-bottom: 10px;
+    }
+    .payment-form {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        .card-number {
+            position: relative;
+            width: 400px;
+            background-color: white;
+            display: flex;
+            flex-direction: column; 
+            padding: 10px 20px;
+            border: 1px solid rgba(17, 17, 17, 0.0666666667);
+            border-radius: 10px;
+        }
+        input {
+            margin-top: 5px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+        .fa-address-card {
+            position: absolute;
+            font-size: 2rem;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.card-buttom {
+    @include mixins.flexbox(10px);
+
+}
+
+@include mixins.screen(sm){
+    .input-information {
+        max-width: 100%;
+    }
+}

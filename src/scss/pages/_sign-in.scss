@@ -1,0 +1,115 @@
+@use "../variables.scss";
+@use "../components/button";
+@use "../components/form";
+@use "./mixins";
+
+
+
+.wrap {
+    min-height: 100vh;
+    background-image: url(../../../public/img/background-sigin.jpg);
+    background-size: cover;
+    background-clip: border-box;
+    align-content: center;
+}
+
+.sign-in {
+    max-width: 1016px;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #ffdfd1;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.sign-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 50px;
+    .sign-left__size {
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        & > * {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+.sign-right {
+    margin: 0 -15px;
+    padding: 65px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #ffff;
+    > * {
+        margin: 0 20px;
+    }
+    > .sign-form {
+        position: relative;
+        .form-input__icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+        .form-input__arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            font-size: 1.6rem;
+            transform: translateY(-50%);
+            padding: 5px;
+            border-radius: 50%;
+            font-weight: 700;
+            color: variables.$secondary-color;
+            background-color: variables.$premeri-color;
+            transition: all 0.4s linear;
+            &:hover {
+                box-shadow: inset 0 0 0 3em #af2f00;
+                color: #ffffff;
+            }
+        }
+    }
+    .sign-right__size {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .sign-forgot {
+        text-align: center;
+        color: variables.$premeri-color;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .sign-text {
+        text-align: center;
+        color: variables.$text-color;
+    }
+    .sign-icon {
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        font-size: 2rem;
+        color: variables.$text-color;
+    }
+}
+
+@include mixins.screen(sm){
+    .sign-left {
+        text-align: center;
+        margin: 10px 0;
+    }
+}

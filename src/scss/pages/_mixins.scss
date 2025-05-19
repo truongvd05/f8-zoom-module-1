@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "../variables.scss";
+
+@mixin screen($key) {
+    $breakpoint: map.get(variables.$grid-breakpoints, $key);
+    @if ($breakpoint) {
+        @media (max-width: ($breakpoint - 0.02)) {
+            @content;
+        }
+    } @else {
+        @error 'the value "#{$key}" is not in breakpoint list';
+    }
+}
+
+@mixin flexbox($value) {
+    display: flex;
+    flex-direction: column;
+    gap: $value;
+}

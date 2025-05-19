@@ -1,0 +1,85 @@
+@use "../pages/mixins";
+@use "../../scss/variables.scss";
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+}
+
+.footer-about {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    max-width: 100%;
+    li:first-child {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    li {
+        font-size: 1.8rem;
+    }
+}
+
+
+// company
+
+.company {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .company-title {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.certification-title {
+    font-size: 3rem;
+}
+.certification {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    height: 74px;
+    > * {
+        height: 100%;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 30px;
+    background-color: variables.$secondary-background-color;
+    p {
+        font-size: 1.6rem;
+        margin: auto 0;
+    }
+}
+
+@include mixins.screen(lg) {
+    .certification {
+        margin-top: 20px;
+
+    }
+}
+
+@include mixins.screen(sm) {
+    .certification {
+        gap: 5px;
+        margin-top: 20px;
+        img {
+            height: 80%;
+        }
+    }
+
+}

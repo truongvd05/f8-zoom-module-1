@@ -1,0 +1,66 @@
+@use "./reset.scss";
+@use "./variables.scss";
+
+// layout
+@use "./layout/gird";
+@use "./layout/header";
+@use "./layout/footer";
+
+// pages
+@use "./pages/about";
+@use "./pages/sign-in";
+@use "./pages/sign-up";
+@use "./pages/home";
+@use "./pages/collection";
+@use "./pages/payment";
+@use "./pages/account";
+
+// components
+@use "./components/button";
+@use "./components/form";
+
+// common
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button, input, textarea, select {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+a {
+    color: inherit;
+}
+
+    body {
+        font-family: "Inter", sans-serif;
+    }
+    html {
+        font-family: "Manrope", sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Manrope", sans-serif;
+    }

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <div class="wrap-header"><%- include("./partials/header.ejs") %></div>
+        <section class="collection">
+            <div class="container">
+                <div class="collection-list">
+                    <div class="collection-list__left">
+                        <nav class="collection-wrap-list">
+                            <ul class="collection-nav">
+                                <p class="collection-list-title">
+                                    Danh mục sản phẩm
+                                </p>
+                                <li><a href="">Mobile Game Cards</a></li>
+                                <li><a href="">Game Cards</a></li>
+                                <li><a href="">Payment Cards</a></li>
+                                <li><a href="">Gift Cards</a></li>
+                                <li><a href="">Game Console</a></li>
+                                <li><a href="">Game CD-Key</a></li>
+                                <li><a href="">Video Streaming</a></li>
+                                <li><a href="">Music</a></li>
+                                <li><a href="">Shopping</a></li>
+                                <li><a href="">Telco Prepaid Cards</a></li>
+                                <li><a href="">Tools</a></li>
+                                <li><a href="">Software</a></li>
+                                <li><a href="">Social App</a></li>
+                                <li><a href="">Freebie Codes</a></li>
+                                <li><a href="">Subscript</a></li>
+                            </ul>
+                            <div class="price-range">
+                                <h1 class="price-range__title">Khoảng giá</h1>
+                                <input
+                                    class="collection-input"
+                                    type="range"
+                                    name=""
+                                    id=""
+                                />
+                                <p class="price-range__price">
+                                    Price: 500.000 - 1.000.000
+                                </p>
+                                <button class="btn-filter">lọc</button>
+                            </div>
+                            <div class="collection-feedback">
+                                <p class="feedback-title">Đánh giá</p>
+                                <ul class="feedback-star">
+                                    <li class="feedback-star__list">
+                                        <input type="checkbox" />
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                    </li>
+                                    <li class="feedback-star__list">
+                                        <input type="checkbox" />
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                    <li class="feedback-star__list">
+                                        <input type="checkbox" />
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                    <li class="feedback-star__list">
+                                        <input type="checkbox" />
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                    <li class="feedback-star__list">
+                                        <input type="checkbox" />
+                                        <i class="primery-star fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="collention-band">
+                                <h1 class="band-title">Thương hiệu</h1>
+                                <ul class="band-list">
+                                    <li><input type="checkbox" />Apple</li>
+                                    <li><input type="checkbox" />Google</li>
+                                    <li><input type="checkbox" />Microsoft</li>
+                                    <li><input type="checkbox" />Amazon</li>
+                                    <li><input type="checkbox" />McDonald's</li>
+                                    <li><input type="checkbox" />Visa</li>
+                                    <li><input type="checkbox" />Tencent</li>
+                                    <li>
+                                        <input type="checkbox" />Louis Vuitton
+                                    </li>
+                                    <li><input type="checkbox" />MasterCard</li>
+                                    <li><input type="checkbox" />Coca-Cola</li>
+                                </ul>
+                            </div>
+                            <div class="collection-voucher">
+                                <div class="voucher-img">
+                                    <img
+                                        src="./img/best-seller-gift.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="voucher-text">
+                                    <h1>Card voucher hot news</h1>
+                                    <button class="content-gift_all">
+                                        View all
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="collection-list__right">
+                        <div class="collection-grid">
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-1.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-2.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-3.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-4.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-5.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-6.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-7.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-8.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-9.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-10.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-1.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-2.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-3.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-4.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-5.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-6.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-7.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-8.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-9.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="wrap-collection-item">
+                                    <div class="wrap-item__img">
+                                        <img
+                                            class="collection-item__img"
+                                            src="./img/goods-10.png"
+                                            alt=""
+                                        />
+                                        <i
+                                            class="far fa-heart collection-heart"
+                                        ></i>
+                                    </div>
+                                    <div class="collection-item__text">
+                                        <p class="collection-item__title">
+                                            Target Gift Card 50$ (US)- Order
+                                        </p>
+                                        <p class="collection-item__price">
+                                            120.000 ~ 134.000
+                                        </p>
+                                        <button class="btn-buy">
+                                            Mua ngay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-next">
+                            <i class="arouw-next fas fa-arrow-left"></i>
+                            <button class="collection-btn__next">1</button>
+                            <button class="collection-btn__next">2</button>
+                            <button class="collection-btn__next">3</button>
+                            <button class="collection-btn__next">4</button>
+                            <i class="arouw-next fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include("./partials/footer.ejs") %>
+    </body>
+    <script type="module" src="./main.js"></script>
+</html>

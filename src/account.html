@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <div class="wrap-header"><%- include("./partials/header.ejs") %></div>
+        <div class="account-background"></div>
+        <section class="account">
+            <div class="container">
+                <div class="row row-cols-xxl-2 row-cols-xl-2 row-cols-ls-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+                    <div class="col">
+                        <div class="account-left">
+                            <div class="account-img">
+                                <img src="./img/accout-user.png" alt="" />
+                                <p class="account-name">Nguyễn Xuân Việt</p>
+                                <span class="account-info"
+                                    ><a>Thông tin tài khoản</a></span
+                                >
+                            </div>
+                            <div class="account-left-bottom">
+                                <span class="bottom-account">
+                                    <i
+                                        class="account-icon fas fa-user-circle"
+                                    ></i>
+                                    <a href="">Tài khoản</a></span
+                                ><span class="bottom-account">
+                                    <i class="account-icon fas fa-history"></i
+                                    ><a href="">Lịch sử mua hàng</a></span
+                                ><span class="bottom-account">
+                                    <i class="account-icon fas fa-history"></i
+                                    ><a href="">Nạp tiền & Rút tiền</a></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col">
+                            <div class="account-right">
+                                <div class="container">
+                                    <div class="row row-cols-xxl-2 row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-1">
+                                        <h1 class="account-overview">
+                                            Tổng quan tài khoản
+                                        </h1>
+                                        <div class="col">
+                                            <div class="account-balance">
+                                                <p class="balance-text">
+                                                    Số dư hiện tại
+                                                </p>
+                                                <div class="wrap-accout-bank">
+                                                    <div class="account-bank">
+                                                        <i
+                                                            class="fab fa-bitcoin"
+                                                        ></i>
+                                                        <p>18.000đ</p>
+                                                    </div>
+                                                    <span
+                                                        ><a
+                                                            class="account-recharge"
+                                                            href=""
+                                                            >Nạp tiền</a
+                                                        ></span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="account-balance">
+                                                <p class="balance-text">
+                                                    Lịch sử mua hàng
+                                                </p>
+                                                <div class="wrap-accout-bank">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="history-status">
+                                                                    <p
+                                                                        class="status-number"
+                                                                    >
+                                                                        12
+                                                                    </p>
+                                                                    <p class="status-text">
+                                                                        Chờ xử lý
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                                <div class="col">
+                                                                    <div class="history-status">
+                                                                    <p
+                                                                        class="status-number"
+                                                                    >
+                                                                        8
+                                                                    </p>
+                                                                    <p class="status-text">
+                                                                        Đang xử lý
+                                                                    </p>
+                                                                </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="history-status">
+                                                                    <p
+                                                                        class="status-number"
+                                                                    >
+                                                                        8
+                                                                    </p>
+                                                                    <p class="status-text">
+                                                                        Hoàn thành
+                                                                    </p>
+                                                                </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="history-status">
+                                                                    <p
+                                                                        class="status-number"
+                                                                    >
+                                                                        8
+                                                                    </p>
+                                                                    <p class="status-text">
+                                                                        Bị hủy
+                                                                    </p>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include("./partials/footer.ejs") %>
+    </body>
+    <script type="module" src="./main.js"></script>
+</html>

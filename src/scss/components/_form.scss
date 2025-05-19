@@ -1,0 +1,13 @@
+@use "../variables.scss";
+
+.form-input {
+    min-width: 50px;
+    max-width: 373px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: variables.$btn-sign-color;
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 100%;
+}
