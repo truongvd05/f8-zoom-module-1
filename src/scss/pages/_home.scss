@@ -563,9 +563,18 @@
         top: -35px;
         left: -152px;
     }
+    .tablet-none {
+        display: none;
+    }
+    .section-service__center {
+        justify-content: center;
+    }
 }
 
 @include mixins.screen(md) {
+    .tablet-none {
+        display: none;
+    }
     .wrap-section {
         .section-box__seller {
             img {
@@ -580,7 +589,7 @@
     .business-circle {
         margin-left: 20px;
     }
-        .section-service__center {
+    .section-service__center {
         justify-content: center;
     }
     .back-right {
@@ -677,6 +686,24 @@
     .section-list-mobile {
         display: none;
     }
+    .wrap-section {
+        .section-box__picture {
+            img {
+            height: 150px;
+            }
+        }
+    }
 }
 
+
+// moblie xm
+@include mixins.screen(xm) {
+    .wrap-section {
+        .section-box__picture {
+            img {
+            height: 200px;
+            }
+        }
+    }
+}
 
