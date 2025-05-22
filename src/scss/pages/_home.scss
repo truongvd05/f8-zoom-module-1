@@ -262,10 +262,12 @@
         margin: 0 auto;
         .section-text__title {
             font-size: 2rem;
+            text-align: center;
         }
         .section-text__price {
             color: variables.$premeri-color;
             font-size: 1.6rem;
+            margin: 0 auto;
         }
     }
 }
